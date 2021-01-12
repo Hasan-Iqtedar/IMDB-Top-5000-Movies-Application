@@ -924,7 +924,6 @@ public:
 			}
 			else {
 				Action = newNode;
-				//Action->next = Adventure;//adv is NULL!
 			}
 			Action = newNode;
 		}
@@ -938,7 +937,6 @@ public:
 			else {
 				Adventure = newNode;
 				Action->next = Adventure;
-				//Adventure->next = Fantasy;
 			}
 			Adventure = newNode;
 		}
@@ -952,7 +950,6 @@ public:
 			else {
 				Fantasy = newNode;
 				Adventure->next = Fantasy;
-				//Fantasy->next = Sci_Fi;
 			}
 			Fantasy = newNode;
 		}
@@ -966,7 +963,6 @@ public:
 			else {
 				Sci_Fi = newNode;
 				Fantasy->next = Sci_Fi;
-				//Sci_Fi->next = Thriller;
 			}
 			Sci_Fi = newNode;
 		}
@@ -980,7 +976,6 @@ public:
 			else {
 				Thriller = newNode;
 				Sci_Fi->next = Thriller;
-				//Thriller->next = Documentary;
 			}
 			Thriller = newNode;
 		}
@@ -994,7 +989,6 @@ public:
 			else {
 				Documentary = newNode;
 				Thriller->next = Documentary;
-				//Documentary->next = Romance;
 			}
 			Documentary = newNode;
 		}
@@ -1008,7 +1002,6 @@ public:
 			else {
 				Romance = newNode;
 				Documentary->next = Romance;
-				//Romance->next = Animation;
 			}
 			Romance = newNode;
 		}
@@ -1022,7 +1015,6 @@ public:
 			else {
 				Animation = newNode;
 				Romance->next = Animation;
-				//Animation->next = Comedy;
 			}
 			Animation = newNode;
 		}
@@ -1036,7 +1028,6 @@ public:
 			else {
 				Comedy = newNode;
 				Animation->next = Comedy;
-				//Comedy->next = Family;
 			}
 			Comedy = newNode;
 		}
@@ -2451,13 +2442,13 @@ int main() {
 	cout << endl << endl;
 	moviesByYear->PrintByYear(moviesByYear->indexedByYear->start, input1);
 
-	//Operation 12. Specify order in 2nd argument e.g "decreasing"
+	//Operation 11. Specify order in 2nd argument e.g "decreasing"
 	cout << "\n\nAll movies sorted by rating (imdb_score) Order (increasing or decreasing)?: \n" << endl;
 	getline(cin, input1);
 	cout << endl << endl;
 	moviesByRating->PrintByRating(moviesByRating->indexedByRating->start, input1);
 
-	//Operation 11 . Argument is a genre e.g "Adventure" etc.
+	//Operation 12 . Argument is a genre e.g "Adventure" etc.
 	cout << "\n\nAll movies sorted by genre rating-wise in increasing order. Genre?: \n" << endl;
 	getline(cin, input1);
 	cout << endl << endl;
