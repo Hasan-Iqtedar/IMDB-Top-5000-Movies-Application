@@ -1,5 +1,6 @@
 # IMDB-Top-5000-Movies-Application
 A small application to perform different operations on IMDB top 5000 movies dataset using efficient data structures.
+In the first version, only linear data structures are used.
 
 ## Operations
 Implemented operations include:
